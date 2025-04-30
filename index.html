@@ -1,44 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cómo hice este sitio</title>
+  <title>Cómo crear un sitio web minimalista</title>
   <style>
     body {
       font-family: sans-serif;
-      background: #f9f9f9;
-      color: #333;
-      margin: 0;
-      padding: 40px;
+      background-color: #fdfdfd;
+      color: #222;
+      margin: 40px auto;
       max-width: 700px;
       line-height: 1.6;
+      padding: 0 20px;
     }
-
-    h1 {
-      font-size: 2em;
-      margin-bottom: 0.5em;
+    h1, h2 {
       color: #111;
     }
-
-    h2 {
-      margin-top: 2em;
-      color: #444;
-    }
-
     code {
-      background: #eee;
-      padding: 2px 6px;
+      background-color: #eee;
+      padding: 3px 6px;
       border-radius: 4px;
-      font-size: 0.95em;
+      font-family: monospace;
     }
-
+    pre {
+      background: #f0f0f0;
+      padding: 10px;
+      overflow-x: auto;
+      border-left: 3px solid #ccc;
+    }
     a {
-      color: #0077cc;
+      color: #007acc;
       text-decoration: none;
     }
-
     a:hover {
       text-decoration: underline;
     }
@@ -46,24 +40,48 @@
 </head>
 <body>
 
-  <h1>Cómo hice este sitio web</h1>
-  <p>Este sitio está construido con código HTML y CSS puro, sin frameworks ni librerías externas. Todo el contenido está en un solo archivo llamado <code>index.html</code>.</p>
+  <h1>Cómo hacer un sitio web minimalista</h1>
 
-  <h2>1. Estructura básica</h2>
-  <p>Usé etiquetas estándar como <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, y <code>&lt;body&gt;</code> para definir la estructura del documento.</p>
+  <p>Este tutorial te enseña a crear un sitio web simple y limpio usando solo HTML y CSS.</p>
 
-  <h2>2. Estilo minimalista</h2>
-  <p>El estilo se definió dentro de una etiqueta <code>&lt;style&gt;</code> en el encabezado. Se usó una fuente sans-serif, colores neutros, y márgenes amplios para lograr un diseño limpio.</p>
+  <h2>1. Estructura básica del HTML</h2>
+  <p>Todo sitio comienza con una estructura base como esta:</p>
 
-  <h2>3. Responsive</h2>
-  <p>Agregué <code>meta viewport</code> para que el diseño se vea bien en móviles:</p>
-  <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code>
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Mi sitio&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hola mundo&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
 
-  <h2>4. Hospedaje</h2>
-  <p>Este archivo puede subirse directamente a <a href="https://pages.github.com" target="_blank">GitHub Pages</a> para que esté disponible en Internet.</p>
+  <h2>2. Agregá estilos minimalistas con CSS</h2>
+  <p>Podés incluir estilos en el mismo archivo, usando la etiqueta <code>&lt;style&gt;</code> dentro del <code>&lt;head&gt;</code>.</p>
 
-  <h2>5. Resultado</h2>
-  <p>Un sitio rápido, simple, sin distracciones, ideal para explicar conceptos o mostrar portafolios básicos.</p>
+  <pre><code>&lt;style&gt;
+  body {
+    font-family: sans-serif;
+    background: #fafafa;
+    color: #333;
+    padding: 40px;
+    max-width: 600px;
+    margin: auto;
+  }
+&lt;/style&gt;
+</code></pre>
+
+  <h2>3. Guardá tu archivo</h2>
+  <p>Guardalo como <code>index.html</code> y abrilo en cualquier navegador web.</p>
+
+  <h2>4. Publicalo con GitHub Pages</h2>
+  <p>Podés subir tu archivo a <a href="https://pages.github.com" target="_blank">GitHub Pages</a> para que esté en Internet gratis.</p>
+
+  <h2>5. ¡Listo!</h2>
+  <p>Ahora tenés un sitio web minimalista y entendés cómo hacerlo desde cero 🎉</p>
 
 </body>
 </html>
