@@ -1,53 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cómo crear un sitio web minimalista</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sitio Minimalista + Cómo hacerlo</title>
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #fdfdfd;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fafafa;
       color: #222;
-      margin: 40px auto;
-      max-width: 700px;
-      line-height: 1.6;
-      padding: 0 20px;
+      margin: 0;
+      padding: 0;
     }
-    h1, h2 {
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: #ffffff;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #666;
+    }
+
+    main {
+      max-width: 700px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      font-size: 1.6em;
+      margin-bottom: 10px;
       color: #111;
     }
-    code {
-      background-color: #eee;
-      padding: 3px 6px;
-      border-radius: 4px;
-      font-family: monospace;
+
+    p {
+      line-height: 1.6;
     }
+
     pre {
       background: #f0f0f0;
       padding: 10px;
       overflow-x: auto;
       border-left: 3px solid #ccc;
+      font-family: monospace;
+      font-size: 0.95em;
     }
+
+    code {
+      background-color: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+
     a {
       color: #007acc;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9em;
+      color: #aaa;
+      border-top: 1px solid #eee;
+    }
+
+    hr {
+      margin: 60px 0;
+      border: none;
+      border-top: 1px solid #ddd;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>Cómo hacer un sitio web minimalista</h1>
+  <!-- Parte 1: Sitio real -->
+  <header>
+    <h1>Mi Sitio Minimalista</h1>
+    <p>Diseño limpio. Contenido claro. Sin distracciones.</p>
+  </header>
 
-  <p>Este tutorial te enseña a crear un sitio web simple y limpio usando solo HTML y CSS.</p>
+  <main>
+    <section>
+      <h2>Sobre mí</h2>
+      <p>Hola, soy un desarrollador web que cree en el poder del diseño simple. Me gusta construir sitios rápidos, claros y funcionales.</p>
+    </section>
 
-  <h2>1. Estructura básica del HTML</h2>
-  <p>Todo sitio comienza con una estructura base como esta:</p>
+    <section>
+      <h2>Proyectos</h2>
+      <p>Trabajo en proyectos de diseño web, desarrollo frontend y experiencias enfocadas en usabilidad. Podés ver algunos en <a href="#">mi portafolio</a>.</p>
+    </section>
 
-  <pre><code>&lt;!DOCTYPE html&gt;
+    <section>
+      <h2>Contacto</h2>
+      <p>Podés escribirme a <a href="mailto:hola@misitio.com">hola@misitio.com</a> o seguirme en <a href="#">@misitio</a> en redes.</p>
+    </section>
+
+    <hr>
+
+    <!-- Parte 2: Tutorial -->
+    <section>
+      <h2>¿Cómo hice este sitio?</h2>
+      <p>Este sitio está hecho con HTML y CSS puro, siguiendo un enfoque minimalista. A continuación te muestro cómo podés crear algo similar desde cero.</p>
+    </section>
+
+    <section>
+      <h2>1. Estructura HTML básica</h2>
+      <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="es"&gt;
   &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
@@ -59,10 +140,8 @@
 &lt;/html&gt;
 </code></pre>
 
-  <h2>2. Agregá estilos minimalistas con CSS</h2>
-  <p>Podés incluir estilos en el mismo archivo, usando la etiqueta <code>&lt;style&gt;</code> dentro del <code>&lt;head&gt;</code>.</p>
-
-  <pre><code>&lt;style&gt;
+      <h2>2. Estilo con CSS</h2>
+      <pre><code>&lt;style&gt;
   body {
     font-family: sans-serif;
     background: #fafafa;
@@ -74,15 +153,19 @@
 &lt;/style&gt;
 </code></pre>
 
-  <h2>3. Guardá tu archivo</h2>
-  <p>Guardalo como <code>index.html</code> y abrilo en cualquier navegador web.</p>
+      <h2>3. Guardá y abrí</h2>
+      <p>Guardá el archivo como <code>index.html</code> y abrilo en tu navegador para ver el resultado.</p>
 
-  <h2>4. Publicalo con GitHub Pages</h2>
-  <p>Podés subir tu archivo a <a href="https://pages.github.com" target="_blank">GitHub Pages</a> para que esté en Internet gratis.</p>
+      <h2>4. Publicalo</h2>
+      <p>Subilo a <a href="https://pages.github.com" target="_blank">GitHub Pages</a> y tenés tu web online gratis.</p>
+    </section>
+  </main>
 
-  <h2>5. ¡Listo!</h2>
-  <p>Ahora tenés un sitio web minimalista y entendés cómo hacerlo desde cero 🎉</p>
+  <footer>
+    © 2025 Mi Sitio Minimalista — Hecho con HTML y CSS puro.
+  </footer>
 
 </body>
 </html>
+
 
